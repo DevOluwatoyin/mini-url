@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body{
+  color: #141414;
+  font-size: 14px;
+}
+
+.navbar-scroll {
+  height: 70px;
+  box-shadow: 0 4px 10px 2px #5c5b5b;
+  background-color: #ffffff;
+}
+
+.form-gradient {
+  background-image: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+}
+
+/* .hero {
+  background-image: url('../assets/hero-bg.png'), url('../assets/hero-bg.png');
+  background-position: center, bottom center;
+  background-repeat: no-repeat;
+} */
+
+.form-bg-img{
+  background-image: url("../assets/form-bg-1.png"), url("../assets/form-bg-2.png");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+}
+
+.cta-bg-img {
+  background-image: url("../assets/cta-bg-1.png"), url("../assets/cta-bg-2.png");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+}
+
+.footer-bg-img {
+    background-image: url("../assets/footer-bg-1.png"), url("../assets/footer-bg-2.png");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+}
+
+/* .react-chatbot-kit-chat-container {
+}
+
+.react-chatbot-kit-chat-inner-container {
+}
+
+.react-chatbot-kit-chat-header {
+}
+
+.react-chatbot-kit-chat-input-container {
+}
+
+.react-chatbot-kit-chat-message-container {
+}
+
+.react-chatbot-kit-chat-input {
+}
+
+.react-chatbot-kit-chat-input-form {
+}
+
+.react-chatbot-kit-chat-input::placeholder {
+}
+
+.react-chatbot-kit-chat-btn-send {
+}
+
+.react-chatbot-kit-chat-btn-send-icon {
+} */
