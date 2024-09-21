@@ -28,7 +28,7 @@ const PromptSamples = (props) => {
     {
       text: "How long will my shortened URL last?",
       handler: props.actionProvider.Expiry,
-      id: 5,
+      id: 6,
     },
   ];
 
