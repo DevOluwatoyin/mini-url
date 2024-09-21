@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import { BotProvider } from "@/context/BotContext";
 
 export const metadata = {
   title: "Scissor App",
@@ -12,12 +13,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div>
-          <Toaster position="top-center" />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </div>
+        <BotProvider>
+          <div>
+            <Toaster position="top-center" />
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </BotProvider>
       </body>
     </html>
   );

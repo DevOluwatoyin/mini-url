@@ -2,6 +2,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import DogPicture from "./DogPicture";
 import PromptSamples from "./Prompts";
 import Response from "./Response";
+import CustomHeader from "./CustomHeader";
 
 const botName = "Scissor Customer Support";
 
@@ -38,19 +39,7 @@ const Config = {
 
   customComponents: {
     // Replaces the default header
-    header: () => (
-      <div
-        style={{
-          padding: "12.5px",
-          backgroundColor: "#efefef",
-          color: "#514f4f",
-          fontWeight: "bold",
-          fontSize: "0.85rem",
-        }}
-      >
-        Scissor Customer Support
-      </div>
-    ),
+    header: () => <CustomHeader />,
 
     // Replaces the default bot avatar
     //  botAvatar: (props) => <MyAvatar {...props} />,
