@@ -1,23 +1,38 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import DogPicture from "./DogPicture";
+import PromptSamples from "./Prompts";
+import Response from "./Response";
 
-const botName = "ExcitementBot";
+const botName = "Scissor Customer Support";
 
 const Config = {
-  initialMessages: [createChatBotMessage(`How can I help you today?😊`)],
+  initialMessages: [
+    createChatBotMessage(`How can I help you today?😊`, {
+      widget: "samplePrompts",
+    }),
+  ],
   botName: botName,
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "#1E3448",
     },
     chatButton: {
-      backgroundColor: "#5ccc9d",
+      backgroundColor: "#0065FE",
     },
   },
   widgets: [
     {
       widgetName: "dogPicture",
       widgetFunc: (props) => <DogPicture {...props} />,
+    },
+    {
+      widgetName: "samplePrompts",
+      widgetFunc: (props) => <PromptSamples {...props} />,
+    },
+    {
+      widgetName: "scissorDefination",
+      widgetFunc: (props) => <Response {...props} />,
+      props: { message: "Scissor is a url shotener website" },
     },
   ],
 
@@ -33,7 +48,7 @@ const Config = {
           fontSize: "0.85rem",
         }}
       >
-        Customer Support
+        Scissor Customer Support
       </div>
     ),
 

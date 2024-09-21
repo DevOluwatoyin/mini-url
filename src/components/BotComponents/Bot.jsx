@@ -13,11 +13,13 @@ const BotBubble = () => {
     const messages = JSON.parse(localStorage.getItem("chat_messages"));
     return messages;
   };
-  // const validateMessages = (messages) => {
-  //   if (!messages.length) {
-  //     console.log(true);
-  //   }
-  // };
+
+  const validateMessages = (messages) => {
+    if (messages.trim() === "") {
+      return false;
+    }
+    return true;
+  };
 
   return (
     <div>
@@ -27,7 +29,7 @@ const BotBubble = () => {
         actionProvider={ActionProvider}
         messageHistory={loadMessages()}
         saveMessages={saveMessages}
-        // validator={validateMessages}
+        validator={validateMessages}
       />
     </div>
   );

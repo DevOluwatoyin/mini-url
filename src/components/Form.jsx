@@ -20,7 +20,7 @@ const Form = () => {
         originalUrl,
         shortCode,
       });
-      setShortenedUrl(`https://scissor-url-shortner.vercel.app/${shortCode}`);
+      setShortenedUrl(`https://mini-url-kappa.vercel.app/${shortCode}`);
       // https://scissor-url-shortner.vercel.app/
     } catch (error) {
       console.error("Error creating short URL:", error);

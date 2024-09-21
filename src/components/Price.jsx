@@ -43,7 +43,7 @@ const Price = () => {
             </p>
           </div>
         </div>
-        <div className="w-full flex flex-col justify-center items-center  rounded bg-gradient-to-b from-[#1E3448] to-[#1E3448] text-white lg:scale-110 group lg:w-1/3">
+        <div className="relative z-[2] w-full flex flex-col justify-center items-center rounded bg-gradient-to-b from-[#1E3448] to-primary-400 text-white lg:scale-110 group lg:w-1/3">
           <div className="space-y-4 p-10">
             <span className="text-2xl">Professional</span>
             <h4 className="font-bold text-3xl">$15/month</h4>

@@ -3,12 +3,14 @@ import React from "react";
 
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
-    if (message.includes("hello")) {
+    if (message.toLowerCase().includes("hello" || "hi")) {
       actions.handleHello();
-    }
-
-    if (message.includes('dog')) {
+    } else if (message.includes("dog")) {
       actions.handleDog();
+    } else if (message.toLowerCase().includes("scissor")) {
+      actions.handleWhatIsScissor();
+    } else {
+      actions.handleHello();
     }
   };
 
